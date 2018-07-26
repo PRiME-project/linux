@@ -470,6 +470,12 @@ config SRAM
 	  the genalloc API. It is supposed to be used for small on-chip SRAM
 	  areas found on many SoCs.
 
+config ENABLE_ARM_PMU
+	tristate "Module to enable user-mode access to ARM PMUs"
+	depends on ARM
+	help
+		Select this configuration to enable user-mode access to ARM PMUs
+
 config SRAM_EXEC
 	bool
 
